@@ -1,0 +1,98 @@
+<html>
+    <head>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+        <script src="teams.js"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+
+      <!-- Make the side bar-->
+      <div class="container sidebar">
+        <div class="container header">
+            <h1><a href="index.html">Hockey Statistics</a></h1>
+        </div>
+
+        <ul class="list-group list-group-flush pt-xl-5">
+            <li class="list-group-item slist"><a href="#">Teams</a></li>
+            <li class="list-group-item slist"><a href="#">Scores</a></li>
+            <li class="list-group-item slist"><a href="#">Standings</a></li>
+        </ul>
+
+        <div class="container">
+            <p class="fixed-bottom"><small> This is just a fun project</small> </p>
+        </div>
+      </div>
+
+      <div class="container-fluid main">
+        <h1> Teams</h1> 
+        <hr>
+
+        <!-- display of the divisions with each team -->
+        <div class="container-fluid divisions d-inline-flex">
+            <div class="container division p-2">
+                <h3>Atlantic</h3>
+                <div class="list-group" id="Atlantic"></div>
+            </div>
+
+            <div class="container division p-2">
+                <h3>Pacific</h3>
+                <div class="list-group" id="Pacific"></div>
+            </div>
+
+
+            <div class="container division p-2">
+                <h3>Metropolitan</h3>
+                <div class="list-group" id="Metropolitan"></div>
+            </div>
+
+
+            <div class="container division p-2">
+                <h3>Central</h3>
+                <div class="list-group" id="Central"></div>
+            </div>
+
+        </div>
+        <hr>
+        <!-- Show the team stats whenever the team is selected above -->
+        <div class="container-fluid d-none" id="team-stats">
+            <h1>Teams stats: <span id="team_name"></span></h1>
+                <table class="table table-bordered">
+                    <tr>
+                        <td id="city"></td>
+                        <td id="building"></td>
+                    </tr>
+                </table>
+                <table class="table table-bordered">
+                    <tr>
+                        <td id="position"></td>
+                        <td id="games"></td>
+                        <td id="wins"></td>
+                        <td id="loss"></td>
+                        <td id="ot_loss"></td>
+                        <td id="points"></td>
+                    </tr>
+                </table>
+                <table class="table table-bordered">
+                    <tr>
+                        <td id="captain"><b>Captain: </b></td>
+                        <td id="ac"></td>
+                    </tr>
+                </table>
+                <table class="table table-bordered">
+                    <tr>
+                        <td>sisdj</td>
+                        <td>sjdisjo</td>
+                    </tr>
+                </table>
+                <table class="table table-bordered">
+                    <tr>
+                        <td>sisdj</td>
+                        <td>sjdisjo</td>
+                    </tr>
+                </table>
+        </div>
+        <small>All data is taken from https://gitlab.com/dword4/nhlapi/blob/master/stats-api.md</small>
+    </div>
+    </body>
+</html>
